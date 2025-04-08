@@ -1,0 +1,41 @@
+{
+	"name": "flying-worker",
+	"version": "0.0.1",
+	"description": "A application development framework for Cloudflare Worker",
+	"type": "module",
+	"scripts": {
+		"remix-watch": "chokidar 'resources/**/*' -c 'react-router build'",
+		"remix-dev": "react-router dev && cp -r public/* build/client/",
+		"remix-build": "react-router build && cp -r public/* build/client/",
+		"dev": "wrangler dev && cp -r public/* build/client/",
+		"deploy": "react-router build && cp -r public/* build/client/ && wrangler deploy",
+		"quality": "biome check .",
+		"quality:fix": "biome check . --write --unsafe"
+	},
+	"dependencies": {
+		"drizzle-orm": "^0.41.0",
+		"flying-worker": "^0.0.102",
+		"isbot": "^5.1.17",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-router": "^7.2.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@cloudflare/workers-types": "^4.20250224.0",
+		"@react-router/dev": "^7.2.0",
+		"@tailwindcss/vite": "^4.0.0",
+		"@types/node": "^20",
+		"@types/react": "^19.0.1",
+		"@types/react-dom": "^19.0.1",
+		"chokidar-cli": "^3.0.0",
+		"drizzle-kit": "^0.30.6",
+		"react-router-devtools": "^1.1.0",
+		"tailwindcss": "^4.0.0",
+		"tsx": "^4.19.3",
+		"typescript": "^5.7.2",
+		"vite": "^5.4.11",
+		"vite-tsconfig-paths": "^5.1.4",
+		"wrangler": "^3.87.0"
+	}
+}
