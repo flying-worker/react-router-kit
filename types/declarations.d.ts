@@ -1,7 +1,5 @@
 import { Ai, D1Database, KVNamespace } from "@cloudflare/workers-types";
 
-// declare module "remix-hono/cloudflare";
-
 type Env = {
 	APP_NAME: string;
 	APP_SECRET: string;

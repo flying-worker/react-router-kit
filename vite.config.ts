@@ -8,7 +8,7 @@ export default defineConfig({
 	resolve: {
 		alias: {
 			"@": path.resolve(__dirname, "./"),
-			"@remix": path.resolve(__dirname, "./resources/remix"),
+			"@react": path.resolve(__dirname, "./resources/react"),
 		},
 	},
 	ssr: {

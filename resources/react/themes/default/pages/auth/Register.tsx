@@ -1,6 +1,6 @@
-import InputLabel from "@remix/themes/default/components/InputLabel";
-import PrimaryButton from "@remix/themes/default/components/PrimaryButton";
-import TextInput from "@remix/themes/default/components/TextInput";
+import InputLabel from "@react/themes/default/components/InputLabel";
+import PrimaryButton from "@react/themes/default/components/PrimaryButton";
+import TextInput from "@react/themes/default/components/TextInput";
 import { useState } from "react";
 
 import { FormEventHandler } from "react";

@@ -4,7 +4,7 @@ export default {
 	future: {
 		unstable_splitRouteModules: true,
 	},
-	appDirectory: "./resources/remix",
+	appDirectory: "./resources/react",
 	// Config options...
 	// Server-side render by default, to enable SPA mode set this to `false`
 	ssr: true,

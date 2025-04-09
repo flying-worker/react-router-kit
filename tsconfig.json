@@ -22,7 +22,7 @@
 		"rootDirs": [".", "./.react-router/types"],
 		"paths": {
 			"@/*": ["./*"],
-			"@remix/*": ["./resources/remix/*"]
+			"@react/*": ["./resources/react/*"]
 		}
 	},
 	"exclude": ["dist"]

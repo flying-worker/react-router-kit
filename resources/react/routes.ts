@@ -15,7 +15,7 @@ export default remixRoutesOptionAdapter(
 		 * Defining routes in `routes/remix.ts` allows you to assign Hono middleware.
 		 * Flying Worker will automatically match the routes and apply the corresponding middleware.
 		 */
-		await import("../../routes/web");
+		await import("../../routes/react");
 
 		return defineRoutes(async (route: DefineRouteFunction) => {
 			/**
